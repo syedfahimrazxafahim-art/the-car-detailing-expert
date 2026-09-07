@@ -1,0 +1,7 @@
+{
+  "name": "The Detailing Expert - TDE",
+  "description": "Professional automotive car washing in Los Angeles, California. Premium care with a perfect finish.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

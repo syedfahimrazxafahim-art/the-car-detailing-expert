@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-metallic: #D4AF37;
+    --gold-bright: #F5C542;
+    --gold-champagne: #E6C875;
+    --gold-border: #8C6B18;
+    --bg-deep: #050505;
+    --bg-surface: #101010;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom Gold Gradients & Glows */
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5C542 50%, #D4AF37 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5C542 0%, #D4AF37 50%, #E6C875 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: #8C6B18;
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(245, 197, 66, 0.35);
+}
+
+.gold-line {
+  height: 2px;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0) 0%, #D4AF37 50%, rgba(212, 175, 55, 0) 100%);
+}
+
+/* Hide scrollbar on specific carousel containers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
